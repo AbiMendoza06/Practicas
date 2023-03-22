@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="CSS/main.css"
     <!--Se refiere al tipo de caracteres especiales dentro de la página (ñ,acentos,etc)-->
     <meta charset="UTF-8">
     <!--Es compatible con el explorador-->
@@ -26,6 +27,29 @@
     </section>
     <hr>
     <section>
+        <h2>Formulario</h2>
+        <form action="">
+            <input type="text" id="Nombre" placeholder="Nombre" required>
+            <!--required me va a permitir que mi campo no se encuentre vacio-->
+            <input type="text" id="Apellido" placeholder="Apellido" required>
+            <input type="date" id="Fecha">
+            <input type="tel" id="Telefono" placeholder="55-55-55-55-55" required>
+            <input type="email" id="Email" placeholder="ejemplo@dominio.com" required>
+            <input type="password" id="Password" placeholder="password" required>
+            <input type="file" id="archivo" required> 
+            <input type="submit" value="Registrar">
+        </form>
     </section>
+        <div>
+            <section>
+                <div id="Imagenes">
+                    <img src="img/img1.jpg" alt="Flor1" width="150px" height="150px" class="efecto" class="efecto;hover">
+                    <img src="img/img2.jpg" alt="Flor2" width="150px" height="150px" class="efecto">
+                    <img src="img/img3.jpg" alt="Flor3" width="150px" height="150px" class="efecto">
+                    <img src="img/img4.jpg" alt="Flor4" width="150px" height="150px" class="efecto">
+                    <img src="img/img5.jpg" alt="Flor5" width="150px" height="150px" class="efecto">
+                </div>
+            </section>
+        </div>
 </body>
 </html>
