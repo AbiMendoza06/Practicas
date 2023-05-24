@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/barra.css">
+    <title>Menu</title>
+</head>
+<body>
+    <nav>
+        <!--termina navbar-->
+        <!--inicia labarra de contacto-->
+        <div class="total">
+            <div class="barra">
+                <div class="parte1">
+                    <ul>
+                        <li><a href="tel:5555555555">Telefono: 55-55-55-55-55</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter:  |</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram:  |</a></li>
+                    </ul>
+                </div>
+                <div class="parte2">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Buscar" class="cajaBuscar" id="Buscar">
+                        <button onclick="buscar();" class="btnBuscar">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--terminalabarra contacto-->
+        <!--inicia el parallax-->
+        <div class="main">
+            <section class="content">
+                <div class="parallax img-uno" id="m">
+                    <div class="text-interior">
+                        <h2 id="m">Diseño y desarrollo web</h2>
+                        <p>Los logros son el resultado del esfuerzo</p>
+                    </div>
+                </div>
+            </section>
+            <!-- .parallax-->
+            <script>
+                function buscar(){
+                    //var cajaBuscar = document.getElementById ("Buscar") .value;
+                    var cajaBuscar = prompt ("¿que deseas buscar?");
+                    if (cajaBuscar == ""){
+                    alert("No colocaste nada en el buscador");
+                    }
+                    else{
+                    alert("Tu criterio de busqueda es: "+cajaBuscar)
+                    }
+                }
+            </script>
+        </div>
+    </nav>
+</body>
+</html>
