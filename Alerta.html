@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta</title>
+</head>
+<body>
+    <h2>Alertas con html y JavaScript</h2>
+
+    <input type="button" value="Mensaje" onclick="alert ();">
+    <hr>
+    <p>Alerta al presionar un checkbox</p>
+    <input type="checkbox" name="presion" onclick="presion ();">
+    <hr>
+    <p>Escribir con JavaScript</p>
+    <input type="button" value="escribir el mensaje" onclick="escribir ();">
+    <hr>
+    <p>Vinculo con alertas</p>
+    <a href="javascript:alert('has llegado a una alerta');">Darle click</a>
+    <hr>
+    <a href="javascript:window.print();">IMPRIMIR PANTALLA</a>
+    <hr>
+    <p>Alerta con opciones aeptar y cancelar</p>
+    <a href="#" onclick="salir();"> salir de la practica</a>
+    <!--funcion boton-->
+    <script>
+        function mensaje(){
+            alert("Esto es una alerta creada con un funcion con JavaScript");
+        }
+    </script>
+    <!--funcion checkbox-->
+    <script>
+        function presion(){
+            alert("Le has dado click al checkbox");
+        }
+    </script>
+    <!--funcion escribir-->
+    <script>
+        function escribir(){
+            document.write("Se esta trabajando con JavaScript");
+        }
+    </script>
+
+    <script>
+        function salir(){
+            var salir=confirm("¿Deseas salir de la practica?")
+            if(salir){
+                alert("Gracias estas saliendo de la pagina")
+                window.location="file:///E:/Proyect/Alerta.html";
+            }
+            else{
+                alert("Gracias sigues con nosotros")
+            }
+        }
+    </script>
+</body>
+</html>
