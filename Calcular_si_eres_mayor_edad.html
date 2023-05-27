@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula si eres mayor de edad</title>
+</head>
+<body>
+    <h1>Calcula si eres mayor de edad</h1>
+    <p>Introduce los datos que se te solicitan</p>
+    <form action="" method="post">
+        <input type="text" id="Nombre" placeholder="Nombre"><br>
+        <input type="number" id="Edad" placeholder="Edad"><br>
+        <input type="tel" id="Telefono" placeholder="Teléfono"><br>
+        <button onclick="validar()">Validar edad</button>
+        <input type="reset" value="Borrar">
+    </form>
+    <script>
+        function validar(){
+            n = document.getElementById("Nombre").value;
+            e = document.getElementById("Edad").value;
+            t = document.getElementById("Telefono").value;
+            if(n=="" && e=="" && t==""){
+                alert("Todos los campos estan vacios");
+            }
+            else if(n==""){
+                alert("El campo nombre esta vacio");
+            }
+            else if(e==""){
+                alert("El campo edad esta vacio");
+            }
+            else if(t==""){
+                alert("El campo telefono esta vacio");
+            }
+            else if(e>=18){
+                    alert("Eres mayor de edad");
+            }
+            else{
+                alert("No eres mayor de edad");
+            }
+        }
+    </script>
+
+</body>
+</html>
