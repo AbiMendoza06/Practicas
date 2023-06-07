@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Formulario</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/form.css">
 </head>
 <body>
     <h2>Formulario</h2>
     <p>Llena los campos que se te solicitan</p>
-    <form action="" method="post">
+    <form action="" method="post" class="form">
         <input type="text" id="nombre" placeholder="Nombre" required>
         <input type="text" id="apellido_pat" placeholder="Apellido paterno" required>
         <input type="text" id="apellido_mat" placeholder="Apellido materno" required>
@@ -23,15 +24,15 @@
             <option value="contabilidad">Contabilidad</option>
             <option value="alimentos_bebidas">Alimentos y bebidad</option>
             <option value="hospitalidad_turistica">Hospitalidad turistica</option>
-        </select>
+        </select> <br>
         <select name="Grupo" id="grupo">
             <option value="">Selecciona tu grupo</option>
-            <option value="201">201</option>
-            <option value="202">202</option>
-            <option value="203">203</option>
-            <option value="204">204</option>
-            <option value="205">205</option>
-            <option value="206">206</option>
+            <option value="401">401</option>
+            <option value="402">402</option>
+            <option value="403">403</option>
+            <option value="404">404</option>
+            <option value="405">405</option>
+            <option value="406">406</option>
         </select>
         <button onclick="enviar()">Enviar</button>
     </form>
