@@ -21,10 +21,19 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg class="bi" width="17" height="17" role="img" aria-label="Tolls" style="color:black;">
+                                <use xlink:href="library/bootstrap-icons-1.10.5/bootstrap-icons.svg#house-door"></use>
+                            </svg>Inicio
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes somos</a>
+                        <a class="nav-link" href="#">
+                            <svg class="bi" width="17" height="17" role="img" aria-label="Tolls" style="color:black;">
+                                <use xlink:href="library/bootstrap-icons-1.10.5/bootstrap-icons.svg#people-fill"></use>
+                            </svg>
+                            Quienes somos
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Proyectos</a>
@@ -91,6 +100,63 @@
         </button>
     </div>
     <!--termina slider-->
+    <!--Inicia barra de contacto-->
+    <div class="container">
+        <div class="row aling-self-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 py-2">
+                <div class="card shadow-lg">
+                    <div class="card-body text-center">
+                        <svg class="bi" width="17" height="17" role="img" aria-label="Tolls" style="color:black;">
+                            <use xlink:href="library/bootstrap-icons-1.10.5/bootstrap-icons.svg#telephone-fill"/></use>
+                        </svg>
+                        <a href="tel:+52 55 55 55 55 55" class="text-dark text-decoration-none">
+                            55 55 55 55 55 55
+                        </a>
+                        &nbsp;&nbsp;
+                        <svg class="bi" width="17" height="17" role="img" aria-label="Tolls" style="color:black;">
+                            <use xlink:href="library/bootstrap-icons-1.10.5/bootstrap-icons.svg#envelophe-fill"/></use>
+                        </svg>
+                        <a href="mailto:contacto@code.com" class="text-dark text-decoration-none"> Contacto@code.com</a>
+                        &nbsp;&nbsp;
+                        |<svg class="bi" width="17" height="17" role="img" aria-label="Tolls" style="color:black;">
+                            <use xlink:href="library/bootstrap-icons-1.10.5/bootstrap-icons.svg#facebook"/></use>
+                        </svg>
+                        <a href="www.facebook.com/code" class="text-dark text-decoration-none"><code></code></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Termina barra de contacto-->
+    <!--inicia apartado de nosotros-->
+    <section id="Nosotros">
+        <div class="row py-5">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <img src="img/img1.jpg" alt="imagen" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 bg-info shadow">
+                <p class="text-light py-4 text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore ratione eius voluptate. Qui provident quaerat veritatis voluptatum officiis, quo assumenda repellendus, itaque iste voluptates, omnis aliquam. Suscipit, eaque minima.
+                </p>
+                <div class="row mt-1">
+                    <a href="#" ><span class="text-light display-6">Misión</span></a>| <span class="text-light display-6">Visión</span>
+                    | <span class="text-light display-6">Objetivos</span>
+                </div>
+            </div>
+        </div>
+        <!--Inicia ofcanvas-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
+        </div>
+            <!--Termina ofcanvas-->
+    </section>
+    <!--Termina apartado de nosotros-->
     <script src="JS/bootstrap.min.js"></script>
 </body>
 
